@@ -1,0 +1,23 @@
+var data =
+[
+	{"source":{"name" : "FastMagnetCurrentChangeMonitor 9" , "id" : "FAST_MAGNET_CURRENT_CHANGE_MONITOR8" , "type" : "FastMagnetCurrentChangeMonitor"},"target":{"name" : "BeamInterlock 7" , "id" : "BEAM_INTERLOCK6" , "type" : "BeamInterlock"},"type":"suit"}, 
+	{"source":{"name" : "SafeMachineParameter 8" , "id" : "SAFE_MACHINE_PARAMATER7" , "type" : "SafeMachineParameter"},"target":{"name" : "SisSubtree 3" , "id" : "SIS_COMPONENT2" , "type" : "SisSubtree"},"type":"suit"}, 
+	{"source":{"name" : "BeamInterlock 7" , "id" : "BEAM_INTERLOCK6" , "type" : "BeamInterlock"},"target":{"name" : "SisSubtree 3" , "id" : "SIS_COMPONENT2" , "type" : "SisSubtree"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 1" , "id" : "WARM_MAGNET_INTERLOCK0" , "type" : "WarmMagnetInterlock"},"target":{"name" : "SafeMachineParameter 8" , "id" : "SAFE_MACHINE_PARAMATER7" , "type" : "SafeMachineParameter"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 2" , "id" : "WARM_MAGNET_INTERLOCK1" , "type" : "WarmMagnetInterlock"},"target":{"name" : "WarmMagnetInterlock 4" , "id" : "WARM_MAGNET_INTERLOCK3" , "type" : "WarmMagnetInterlock"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 2" , "id" : "WARM_MAGNET_INTERLOCK1" , "type" : "WarmMagnetInterlock"},"target":{"name" : "WarmMagnetInterlock 5" , "id" : "WARM_MAGNET_INTERLOCK4" , "type" : "WarmMagnetInterlock"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 2" , "id" : "WARM_MAGNET_INTERLOCK1" , "type" : "WarmMagnetInterlock"},"target":{"name" : "SisServer 10" , "id" : "SIS_COMPONENT9" , "type" : "SisServer"},"type":"suit"}, 
+	{"source":{"name" : "SisSubtree 6" , "id" : "SIS_COMPONENT5" , "type" : "SisSubtree"},"target":{"name" : "BeamInterlock 7" , "id" : "BEAM_INTERLOCK6" , "type" : "BeamInterlock"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 1" , "id" : "WARM_MAGNET_INTERLOCK0" , "type" : "WarmMagnetInterlock"},"target":{"name" : "FastMagnetCurrentChangeMonitor 9" , "id" : "FAST_MAGNET_CURRENT_CHANGE_MONITOR8" , "type" : "FastMagnetCurrentChangeMonitor"},"type":"suit"}, 
+	{"source":{"name" : "SisSubtree 6" , "id" : "SIS_COMPONENT5" , "type" : "SisSubtree"},"target":{"name" : "FastMagnetCurrentChangeMonitor 9" , "id" : "FAST_MAGNET_CURRENT_CHANGE_MONITOR8" , "type" : "FastMagnetCurrentChangeMonitor"},"type":"suit"}, 
+	{"source":{"name" : "SisSubtree 3" , "id" : "SIS_COMPONENT2" , "type" : "SisSubtree"},"target":{"name" : "WarmMagnetInterlock 1" , "id" : "WARM_MAGNET_INTERLOCK0" , "type" : "WarmMagnetInterlock"},"type":"suit"}, 
+	{"source":{"name" : "SisSubtree 3" , "id" : "SIS_COMPONENT2" , "type" : "SisSubtree"},"target":{"name" : "WarmMagnetInterlock 2" , "id" : "WARM_MAGNET_INTERLOCK1" , "type" : "WarmMagnetInterlock"},"type":"suit"}, 
+	{"source":{"name" : "BeamInterlock 7" , "id" : "BEAM_INTERLOCK6" , "type" : "BeamInterlock"},"target":{"name" : "WarmMagnetInterlock 1" , "id" : "WARM_MAGNET_INTERLOCK0" , "type" : "WarmMagnetInterlock"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 5" , "id" : "WARM_MAGNET_INTERLOCK4" , "type" : "WarmMagnetInterlock"},"target":{"name" : "WarmMagnetInterlock 1" , "id" : "WARM_MAGNET_INTERLOCK0" , "type" : "WarmMagnetInterlock"},"type":"suit"}, 
+	{"source":{"name" : "SisServer 10" , "id" : "SIS_COMPONENT9" , "type" : "SisServer"},"target":{"name" : "SisSubtree 3" , "id" : "SIS_COMPONENT2" , "type" : "SisSubtree"},"type":"suit"}, 
+	{"source":{"name" : "SisServer 10" , "id" : "SIS_COMPONENT9" , "type" : "SisServer"},"target":{"name" : "WarmMagnetInterlock 4" , "id" : "WARM_MAGNET_INTERLOCK3" , "type" : "WarmMagnetInterlock"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 1" , "id" : "WARM_MAGNET_INTERLOCK0" , "type" : "WarmMagnetInterlock"},"target":{"name" : "SisSubtree 3" , "id" : "SIS_COMPONENT2" , "type" : "SisSubtree"},"type":"suit"}, 
+	{"source":{"name" : "SisSubtree 3" , "id" : "SIS_COMPONENT2" , "type" : "SisSubtree"},"target":{"name" : "BeamInterlock 7" , "id" : "BEAM_INTERLOCK6" , "type" : "BeamInterlock"},"type":"suit"}, 
+	{"source":{"name" : "WarmMagnetInterlock 5" , "id" : "WARM_MAGNET_INTERLOCK4" , "type" : "WarmMagnetInterlock"},"target":{"name" : "FastMagnetCurrentChangeMonitor 9" , "id" : "FAST_MAGNET_CURRENT_CHANGE_MONITOR8" , "type" : "FastMagnetCurrentChangeMonitor"},"type":"suit"}, 
+	{"source":{"name" : "BeamInterlock 7" , "id" : "BEAM_INTERLOCK6" , "type" : "BeamInterlock"},"target":{"name" : "FastMagnetCurrentChangeMonitor 9" , "id" : "FAST_MAGNET_CURRENT_CHANGE_MONITOR8" , "type" : "FastMagnetCurrentChangeMonitor"},"type":"suit"}
+]
