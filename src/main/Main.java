@@ -25,53 +25,33 @@ import json.JSONExporter;
 
 public class Main extends Application {
 	public static Scene scene;
-	public static String path;
+    public static String path;
 	@Override
 	public void start(Stage primaryStage) throws IOException, IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
 			StackPane page = (StackPane) FXMLLoader.load(Main.class.getResource("graphdisplay.fxml"));
 			scene = new Scene(page);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			primaryStage.setMaximized(true);
-			
-			WebView browser = (WebView)scene.lookup("#webview");
-			Button btn = (Button)scene.lookup("#btn");
-			ComboBox<String> ddl = (ComboBox<String>)scene.lookup("#DropDownList");
-			ddl.getItems().addAll("Display1","Display2");
-			ddl.getSelectionModel().selectFirst();
-			
-			pathBuilder();			
-			
-			JSONExporter.generateJson((Collection<SystemRelation>) DataLayerImpl.getInstance().getData());
-			browser.getEngine().load(getGraphPath(ddl.getValue()));
-            btn.setOnAction(new EventHandler<ActionEvent>(){
-				public void handle(ActionEvent event) {
-					try {
-						JSONExporter.generateJson((Collection<SystemRelation>) DataLayerImpl.getInstance().getData());
-					} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException
-							| SecurityException | IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					browser.getEngine().load("about:blank");
-					browser.getEngine().load(getGraphPath(ddl.getValue()));
-				}
-				
-			});
   
 	}
 	
-	private void pathBuilder() throws UnsupportedEncodingException{
-		path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-		path = path.substring(0, path.lastIndexOf("/"));
-		path = URLDecoder.decode(path, "UTF-8") +"/javascript/";
-		
-	}
-	
-	private String getGraphPath(String name){
-		return "file://"+path+"/"+name+"/index.html";
-	}
+	 public static void pathBuilder(){
+         path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+         path = path.substring(0, path.lastIndexOf("/"));
+         try {
+             path = URLDecoder.decode(path, "UTF-8") +"/javascript/";
+         } catch (UnsupportedEncodingException e) {
+             // TODO Auto-generated catch block
+             e.printStackTrace();
+         }
+         
+     }
+     
+     public static String getGraphPath(String name){
+         return "file://"+path+"/"+name+"/index.html";
+     }
+
 	
 	public static void main(String[] args) {
 		launch(args);

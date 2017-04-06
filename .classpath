@@ -6,7 +6,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/mpe-commons-util"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/mpe-systems-core"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/mpe-systems-domain-mps"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/mpe-systems-sample"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/sysboard-core"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
